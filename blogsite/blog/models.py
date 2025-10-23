@@ -37,7 +37,6 @@ class Post(models.Model):
 
     objects = models.Manager()  # The default manager.
     published_posts = PublishedManager()  # Our custom manager.
-    
     class Meta:
         ordering = ['-published']
         indexes = [
